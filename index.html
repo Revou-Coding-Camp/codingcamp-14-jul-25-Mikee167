@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">MyWebsite</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Message</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Hi Hari, Welcome To Website</h1>
+    <p>your perfect business solution</p>
+  </section>
+
+  <!-- Headquarters / Team Section -->
+  <section class="team">
+    <h2>Our Headquarter</h2>
+    <div class="team-members">
+      <div class="member">Jakarta</div>
+      <div class="member">Bandung</div>
+      <div class="member">Surabaya</div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact">
+    <h2>Message Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+  </section>
+
+  <footer>
+    <p>Created by Hari</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
