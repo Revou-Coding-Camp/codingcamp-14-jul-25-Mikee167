@@ -1,95 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-  background-color: #222;
-  padding: 10px 20px;
-  color: #fff;
+    background-color: #1366e5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.domain {
+    font-size: 14px;
+    color: #ddd;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #333;
+    padding: 10px 0;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
+nav ul li {
+    margin: 0 15px;
 }
 
-.hero {
-  padding: 50px;
-  text-align: center;
-  background: #eee;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.team {
-  padding: 40px;
-  text-align: center;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.team-members {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
+.welcome-section {
+    background-color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.member {
-  background: #ccc;
-  padding: 20px;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.welcome-section h1 {
+    color: #1366e5;
+    margin-bottom: 10px;
 }
 
-.contact {
-  padding: 40px;
-  background-color: #f8f8f8;
-  text-align: center;
+.website-code {
+    color: #1366e5;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: auto;
+.headquarter-section {
+    background-color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-input, textarea {
-  padding: 10px;
-  font-size: 1em;
-  border: 1px solid #aaa;
-  border-radius: 4px;
+.headquarter-section h2 {
+    color: #1366e5;
+    margin-bottom: 20px;
+}
+
+.cities {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.city {
+    margin: 10px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.form-section {
+    background-color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+    color: #1366e5;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-option {
+    display: flex;
+    align-items: center;
+}
+
+.gender-option input {
+    margin-right: 5px;
 }
 
 button {
-  padding: 10px;
-  font-size: 1em;
-  background-color: #222;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    background-color: #1366e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0d56c0;
+}
+
+.time-display {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.submission-display {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: none;
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #222;
-  color: #fff;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
 }
