@@ -1,23 +1,25 @@
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+function updateTime() {
+    const now = new Date();
+    document.getElementById('currentTime').textContent = 'Current time: ' + now.toString();
+}
 
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const message = document.getElementById("message").value.trim();
+setInterval(updateTime, 1000);
+updateTime();
 
-  if (!name || !email || !phone || !message) {
-    alert("Please fill out all fields.");
-    return;
-  }
+document.getElementById('messageForm').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-  if (!email.includes("@")) {
-    alert("Please enter a valid email address.");
-    return;
-  }
+    const name = document.getElementById('name').value;
+    const birthdate = document.getElementById('birthdate').value;
+    const gender = document.querySelector('input[name="gender"]:checked').value;
+    const message = document.getElementById('message').value;
 
-  document.getElementById("result").innerText =
-    `Thank you, ${name}. We have received your message.`;
+    const formattedDate = birthdate ? new Date(birthdate).toLocaleDateString('en-GB') : '';
 
-  document.getElementById("contactForm").reset();
+    document.getElementById('displayName').textContent = 'Nama: ' + (name || 'Harfi Novian');
+    document.getElementById('displayBirthdate').textContent = 'Tanggal Lahir: ' + (formattedDate || '01/11/1985');
+    document.getElementById('displayGender').textContent = 'Jenis Kelamin: ' + (gender || 'Laki - Laki');
+    document.getElementById('displayMessage').textContent = 'Pesan: ' + (message || 'Lagi Balajar buat Website');
+
+    document.getElementById('submissionData').style.display = 'block';
 });
